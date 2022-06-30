@@ -1,0 +1,149 @@
+/**
+* Lines
+*/
+.top-bar {
+    border-bottom-width: 1px;
+}
+
+
+/**
+* Spaces
+*/
+.nav-bar,
+.menu-bar,
+.nav-bar__section--top .nav-bar__section--center,
+.nav-bar__section--top .nav-bar__section--end {
+    display: flex;
+}
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 32px;
+}
+.nav-bar__section--top .nav-bar__section--start,
+.nav-bar__section--top .nav-bar__section--center,
+.nav-bar__section--top .nav-bar__section--end {
+    flex: 1;
+}
+.nav-bar__section--top .nav-bar__section--end {
+    justify-content: flex-end;
+}
+.nav-bar__section--top .nav-bar__section--center {
+    justify-content: center;
+}
+
+.nav-bar__section--bottom {
+    position: relative;
+}
+.nav-bar__section--end .menu-bar__item {
+    margin-left: 16px;
+}
+[id="primary-menu-bar-toggler"],
+[for="primary-menu-bar-toggler"] {
+    display: none;
+}
+
+
+/**
+* Colors
+*/
+.top-bar {
+    border-bottom-color: var(--black-40);
+}
+.nav-bar__section--top {
+    background-color: var(--black-10);
+}
+.nav-bar__section--bottom {
+    background-color: var(--black-20);
+}
+
+.menu-bar__item:hover {
+    background-color: var(--black-10);
+}
+
+
+
+/**
+* Textures
+*/
+.top-bar {
+    border-bottom-style: solid;
+}
+[for="primary-menu-bar-toggler"]:hover {
+    cursor: pointer;
+}
+
+
+/**
+* Types
+*/
+.brand {
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+
+/*********************
+* Responsive top-bar
+*/
+@media (max-width: 1200px){
+    /**
+    * Lines
+    */
+    .primary-menu-bar {
+        border-width: 1px;
+    } 
+
+
+    /**
+    * Shapes
+    */
+    .primary-menu-bar {
+        width: 100vw;
+    }
+
+    /**
+    * Spaces
+    */
+    .nav-bar__section--top {
+        display: none;
+    }
+    [id="primary-menu-bar-toggler"]:checked + [role="list"],
+    [for="primary-menu-bar-toggler"] {
+        display: block;
+    }
+    .primary-menu-bar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 16px 8px;
+    }
+    
+
+    /**
+    * Colors
+    */
+    .primary-menu-bar {
+        background-color: var(--black-10);
+        border-color:  var(--black-20);
+    }
+
+
+    /**
+    * Textures 
+    */
+    .primary-menu-bar {
+        border-style: solid;
+    }
+
+
+    /**
+    * Types
+    */
+    .primary-menu-bar {
+        text-align: center;
+    }
+}

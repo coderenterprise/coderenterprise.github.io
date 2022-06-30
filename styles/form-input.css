@@ -1,0 +1,50 @@
+.form-group {
+    padding: 16px;
+    position: relative;
+}
+.form-group::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom: 12px;
+    border-bottom: 1px solid var(--black-00);
+    transition: all 0.4s ease-in-out;
+}
+.form-group::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    top: 0;
+    right: 12px;
+    border-right: 1px solid var(--black-00);
+    transition: all 0.4s ease-in-out;
+
+}
+.form-group:hover::before {
+    width: 100%;
+    border-bottom: 1px solid var(--black-80);
+}
+
+.form-group:hover::after {
+    height: 100%;
+    border-right: 1px solid var(--black-40);
+}
+
+
+
+.form-control {
+    border: 1px solid var(--black-40);
+    display: flex;
+    
+}
+.form-input {
+    background-color: var(--black-20);
+    padding: 4px 8px;
+    outline-width: 0;
+    border-width: 0;
+    flex-grow: 1;
+}
+.form-input:focus {
+    background-color: var(--black-10);
+    outline: 1px solid var(--black-40);
+}

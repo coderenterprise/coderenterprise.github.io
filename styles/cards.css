@@ -1,0 +1,143 @@
+/**
+* Lines 
+*/
+.cards__header {
+    border-bottom-width: 1px;
+}
+.card {
+    border: 1px;
+}
+
+
+/**
+* Shapes
+*/
+.card {
+    width: 400px;
+}
+.card__media {
+    width: 400px;
+    height: 400px;
+}
+
+
+/**
+* Spaces
+*/
+.cards__header,
+.card__actions,
+.card__actions--icons,
+.cards__wrapper,
+.cards__footer,
+.cards__action {
+    display: flex;
+}
+.cards__header,
+.card__actions,
+.cards__wrapper,
+.cards__footer,
+.cards__action {
+    align-items: center;
+}
+
+.cards__footer {
+    justify-content: center;
+}
+.cards__header,
+.card__actions {
+    justify-content: space-between;
+}
+.cards__wrapper {
+    flex-wrap: wrap;
+}
+.cards__wrapper,
+.cards__action,
+.card__actions--icons {
+    gap: 8px;
+}
+.cards__wrapper{
+    gap: 16px;
+}
+.card__actions,
+.cards__action {
+    padding: 8px 0;
+}
+.cards__wrapper,
+.cards__footer {
+    padding: 16px 0;
+}
+.cards {
+    margin: 16px 32px;
+}
+.card__body {
+    padding: 8px;
+}
+
+
+/**
+* Colors
+*/
+.cards__header {
+    border-bottom-color: var(--black-20);
+}
+.card {
+    border-color: var(--black-40);
+}
+.card__media {
+    background-color: var(--black-20);
+}
+.card__title {
+    color: var(--black-d0);
+}
+.card__body {
+    background-color: var(--black-10);
+}
+.card__subtitle {
+    color: var(--black-a0);
+}
+
+
+/**
+* Textures
+*/
+.cards__header {
+    border-bottom-style: solid;
+}
+.card {
+    border-style: solid;
+}
+
+
+/**
+* Types
+*/
+.cards__action {
+    text-transform: uppercase;
+}
+
+.card__title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.card__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+/*********
+* Respensive cards
+*/
+@media (max-width:440px){
+    .cards {
+        margin: 16px 4px;
+    }
+    .cards__header {
+        padding: 0 16px 8px;
+    }
+}
+
+
+
+

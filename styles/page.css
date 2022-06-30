@@ -1,0 +1,61 @@
+/**
+* Introduction
+*/
+
+.introduction {
+    padding: 32px 0;
+}
+.introduction__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: var(--black-f0);
+}
+.introduction__overline {
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 14px;
+    color: var(--black-a0);
+}
+
+/**
+* Footer
+*/
+.footer {
+    padding: 16px 32px 64px;
+    background-color: var(--black-10);
+}
+.footer,
+.footer__section--start {
+    display: flex;
+}
+.footer__section--start,
+.footer__section--end,
+.footer__column {
+    flex: 1;
+}
+
+.footer__column {
+    padding-top: 16px;
+}
+.footer__column-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--black-b0);
+}
+.footer__column-item {
+    padding: 8px 0 16px;
+}
+.footer__column-item .link{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: lowercase;
+    display: inline;
+}
+
+.footer__column-paragraph {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-a0);
+}

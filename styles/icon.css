@@ -1,0 +1,130 @@
+/**
+* Lines 
+*/
+.icon {
+    outline-width: 2px;
+}
+.icon,
+.icon::before, 
+.icon::after {
+    border-radius: 100%;
+}
+.icon,
+.icon::before, 
+.icon::after,
+.icon:hover {
+    border-width: 1px;
+}
+.icon:hover::before {
+    border-width: 24px;
+}
+.icon:hover::after {
+    border-width: 20px;
+}
+
+
+/**
+* Shapes
+*/
+.icon,
+.icon__svg {
+    height: 40px;
+    width: 40px;
+}
+.icon::after,
+.icon:hover::before{
+    height: 100%;
+}
+.icon::before {
+    height: 0%;
+}
+.icon:hover::after {
+    width: 25%;
+    height: 25%;
+}
+.icon::after,
+.icon:hover::before {
+    width: 100%;
+}
+.icon::before {
+    width: 0;
+}
+
+
+/**
+* Forms
+*/
+.icon {
+    z-index: 1;
+}
+.icon::before, 
+.icon::after {
+    z-index: -1;
+}
+
+
+/**
+* Spaces 
+*/
+.icon__svg {
+    padding: 8px;
+}
+.icon {
+    position: relative;
+}
+.icon::before, 
+.icon::after {
+    content: "";
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+}
+.icon::before, 
+.icon::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/**
+** Colors
+*/
+.icon:active {
+    outline-color:var(--black-ff);
+    background-color: var(--black-ff);
+}
+.icon,
+.icon::before, 
+.icon::after {
+    border-color: var(--black-00);
+}
+.icon:hover::before,
+.icon:hover::after {
+    border-color:var(--black-80);
+}
+.icon:active::before {
+    border-color:var(--black-ff);
+}
+.icon:hover .icon__svg {
+    fill: var(--white-ff);
+}
+
+
+/**
+* Textures
+*/
+.icon:hover,
+.icon:hover::after,
+.icon::before, 
+.icon::after,
+.icon,
+.icon:hover::before {
+    border-style: solid;
+}
+.icon:hover{
+    cursor: pointer;
+}
+
+.icon:active {
+    outline-style: solid;
+}

@@ -1,0 +1,109 @@
+/**
+* Lines 
+*/
+.link {
+    outline-width: 1px;
+    border-width: 1px;
+}
+.link::after,
+.link::before{
+    border-bottom-width: 2px;
+}
+
+
+/**
+* Shapes 
+*/
+.link::after{
+    height: 0;
+}
+.link::before{
+    height: 100%;
+}
+.link::after,
+.link::before{
+    width: 0;
+}
+.link:hover::after,
+.link:hover::before {
+    width: 100%;
+}
+
+
+/**
+* Spaces
+*/
+.link {
+    position: relative;
+}
+.link::after,
+.link::before{
+    content: "";
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+}
+.link::before {
+    top: 0;
+}
+.link::after {
+    top: 0;
+}
+
+.link {
+    display: block;
+    padding: 8px 32px;
+}
+.link::after {
+    right: 8px;
+}
+.link::before {
+    left: 8px;
+}
+
+
+/**
+* Colors 
+*/
+.link {
+    color: var(--black-c0);
+    background-color: var(--black-00);
+    outline-color:  var(--black-00);
+    border-color:  var(--black-00);
+}
+.link:active {
+    color: var(--white-ff);
+    background-color: var(--black-ff);
+    border-color:  var(--white-ff);
+    outline-color:  var(--black-ff);
+}
+.link::before {
+    border-bottom-color: var(--black-60);
+}
+.link::after {
+    border-bottom-color: var(--black-80);
+}
+
+/**
+* Textures
+*/
+.link::after,
+.link::before {
+    border-bottom-style: solid;
+}
+.link {
+    text-decoration: none;
+    border-style:  solid;
+    outline-style:  solid;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+/**
+* Types
+*/
+.link {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: lowercase;
+}

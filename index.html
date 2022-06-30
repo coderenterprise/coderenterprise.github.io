@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/top-bar.css">
+    <link rel="stylesheet" href="styles/icon.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="styles/link.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/page.css">
+    <link rel="stylesheet" href="styles/form-input.css">
+    <link rel="stylesheet" href="styles/form-select.css">
+</head>
+<body>
+    <header class="top-bar">
+        <article class="nav-bar nav-bar__section--top">
+            <section class="nav-bar__section--start">
+                <button class="button">Login</button>
+            </section>
+            <section class="nav-bar__section--center">
+                <div class="brand">BRAND</div>
+            </section>
+            <section class="nav-bar__section--end">
+                <button class="icon">
+                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                        <path d="m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"/>
+                    </svg>
+                </button>
+            </section>
+        </article>
+        <article class="nav-bar nav-bar__section--bottom">
+            <nav class="nav-bar__section--start">
+                <label for="primary-menu-bar-toggler" class="icon">
+                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                        <path d="M3 18v-2h18v2Zm0-5v-2h18v2Zm0-5V6h18v2Z"/>
+                    </svg>
+                </label>
+                <input id="primary-menu-bar-toggler" type="checkbox" role="toggler">
+
+
+                <ul class="menu-bar primary-menu-bar" role="list">
+                    <li class="menu-bar__item menu-bar__item--active">
+                        <a href="" class="link">Home</a>
+                    </li>
+                    <li class="menu-bar__item">
+                        <a href="" class="link">shop</a>
+                    </li>
+                    <li class="menu-bar__item">
+                        <a href="" class="link">new arrivals</a>
+                    </li>
+                    <li class="menu-bar__item">
+                        <a href="" class="link"> about</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav-bar__section--end">
+                <ul class="menu-bar" role="list">
+                    <li class="menu-bar__item icon">
+                        <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                            <path d="m12 21-1.45-1.3q-3.925-3.5-6.238-6.088Q2 11.025 2 8.15 2 5.8 3.575 4.225 5.15 2.65 7.5 2.65q1.325 0 2.5.562 1.175.563 2 1.538.825-.975 2-1.538 1.175-.562 2.5-.562 2.35 0 3.925 1.575Q22 5.8 22 8.15q0 2.875-2.312 5.462Q17.375 16.2 13.45 19.7Zm0-9.525Zm0 6.825q3.575-3.25 5.788-5.6Q20 10.35 20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2.175.662-1 .663-1.375 1.688h-1.9q-.375-1.025-1.375-1.688-1-.662-2.175-.662-1.5 0-2.5 1t-1 2.5q0 2.2 2.213 4.55Q8.425 15.05 12 18.3Z"/>
+                        </svg>
+                    </li>
+                    <li class="menu-bar__item icon">
+                        <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                            <path d="M19 22H5q-.825 0-1.413-.587Q3 20.825 3 20V8q0-.825.587-1.412Q4.175 6 5 6h2q0-2.075 1.463-3.538Q9.925 1 12 1t3.538 1.462Q17 3.925 17 6h2q.825 0 1.413.588Q21 7.175 21 8v12q0 .825-.587 1.413Q19.825 22 19 22ZM9 6h6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6Zm10 14V8H5v12Zm-7-6q2.075 0 3.538-1.463Q17 11.075 17 9h-2q0 1.25-.875 2.125T12 12q-1.25 0-2.125-.875T9 9H7q0 2.075 1.463 3.537Q9.925 14 12 14ZM5 8v12V8Z"/>
+                        </svg>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </header>
+
+    <main>
+
+        <section class="introduction">
+            <h2 class="introduction__overline">collection</h2>
+            <h1 class="introduction__title">summer 2022</h1>
+        </section>
+
+        <section class="cards">
+            <header class="cards__header">
+                <div class="cards__action">
+                    <div class="form-menu">
+                        <label>
+                            <div class="form-menu__label">
+                                <span class="form-menu__label-text">filter</span>
+                                <div  class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="m12 15.375-6-6 1.4-1.4 4.6 4.6 4.6-4.6 1.4 1.4Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input class="form-menu__toggler" type="checkbox">
+                            <ul class="form-menu__surface form-menu__surface--start" role="list">
+                                <li class="form-menu__item">
+                                    under construction
+                                </li>
+                            </ul>
+                        </label>
+                    </div>
+                </div>
+                <div class="cards__action">
+                    <div class="form-menu">
+                        <label>
+                            <div class="form-menu__label">
+                                <span class="form-menu__label-text">sort</span>
+                                <div  class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="m12 15.375-6-6 1.4-1.4 4.6 4.6 4.6-4.6 1.4 1.4Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input class="form-menu__toggler" type="checkbox">
+                            <ul class="form-menu__surface form-menu__surface--end" role="list">
+                                <li class="form-menu__item">
+                                    underconstruction
+                                </li>
+                            </ul>
+                        </label>
+                    </div>
+
+                </div>
+            </header>
+            <div class="cards__wrapper">
+                <!-- Card -->
+                <div class="card">
+                    <div class="card__media"></div>
+                    <div class="card__body">
+                        <div class="card__title">some not big not large title</div>
+                        <div class="card__actions">
+                            <div class="card__subtitle">$19.93</div>
+                            <div class="card__actions--icons">
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="m12 21-1.45-1.3q-3.925-3.5-6.238-6.088Q2 11.025 2 8.15 2 5.8 3.575 4.225 5.15 2.65 7.5 2.65q1.325 0 2.5.562 1.175.563 2 1.538.825-.975 2-1.538 1.175-.562 2.5-.562 2.35 0 3.925 1.575Q22 5.8 22 8.15q0 2.875-2.312 5.462Q17.375 16.2 13.45 19.7Zm0-9.525Zm0 6.825q3.575-3.25 5.788-5.6Q20 10.35 20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2.175.662-1 .663-1.375 1.688h-1.9q-.375-1.025-1.375-1.688-1-.662-2.175-.662-1.5 0-2.5 1t-1 2.5q0 2.2 2.213 4.55Q8.425 15.05 12 18.3Z"/>
+                                    </svg>
+                                </div>
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="M19 22H5q-.825 0-1.413-.587Q3 20.825 3 20V8q0-.825.587-1.412Q4.175 6 5 6h2q0-2.075 1.463-3.538Q9.925 1 12 1t3.538 1.462Q17 3.925 17 6h2q.825 0 1.413.588Q21 7.175 21 8v12q0 .825-.587 1.413Q19.825 22 19 22ZM9 6h6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6Zm10 14V8H5v12Zm-7-6q2.075 0 3.538-1.463Q17 11.075 17 9h-2q0 1.25-.875 2.125T12 12q-1.25 0-2.125-.875T9 9H7q0 2.075 1.463 3.537Q9.925 14 12 14ZM5 8v12V8Z"/>
+                                    </svg>
+                                </div>
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="M12 20q-.825 0-1.412-.587Q10 18.825 10 18q0-.825.588-1.413Q11.175 16 12 16t1.413.587Q14 17.175 14 18q0 .825-.587 1.413Q12.825 20 12 20Zm0-6q-.825 0-1.412-.588Q10 12.825 10 12t.588-1.413Q11.175 10 12 10t1.413.587Q14 11.175 14 12q0 .825-.587 1.412Q12.825 14 12 14Zm0-6q-.825 0-1.412-.588Q10 6.825 10 6t.588-1.412Q11.175 4 12 4t1.413.588Q14 5.175 14 6t-.587 1.412Q12.825 8 12 8Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card">
+                    <div class="card__media"></div>
+                    <div class="card__body">
+                        <div class="card__title">some not big not large title</div>
+                        <div class="card__actions">
+                            <div class="card__subtitle">$19.93</div>
+                            <div class="card__actions--icons">
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="m12 21-1.45-1.3q-3.925-3.5-6.238-6.088Q2 11.025 2 8.15 2 5.8 3.575 4.225 5.15 2.65 7.5 2.65q1.325 0 2.5.562 1.175.563 2 1.538.825-.975 2-1.538 1.175-.562 2.5-.562 2.35 0 3.925 1.575Q22 5.8 22 8.15q0 2.875-2.312 5.462Q17.375 16.2 13.45 19.7Zm0-9.525Zm0 6.825q3.575-3.25 5.788-5.6Q20 10.35 20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2.175.662-1 .663-1.375 1.688h-1.9q-.375-1.025-1.375-1.688-1-.662-2.175-.662-1.5 0-2.5 1t-1 2.5q0 2.2 2.213 4.55Q8.425 15.05 12 18.3Z"/>
+                                    </svg>
+                                </div>
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="M19 22H5q-.825 0-1.413-.587Q3 20.825 3 20V8q0-.825.587-1.412Q4.175 6 5 6h2q0-2.075 1.463-3.538Q9.925 1 12 1t3.538 1.462Q17 3.925 17 6h2q.825 0 1.413.588Q21 7.175 21 8v12q0 .825-.587 1.413Q19.825 22 19 22ZM9 6h6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6Zm10 14V8H5v12Zm-7-6q2.075 0 3.538-1.463Q17 11.075 17 9h-2q0 1.25-.875 2.125T12 12q-1.25 0-2.125-.875T9 9H7q0 2.075 1.463 3.537Q9.925 14 12 14ZM5 8v12V8Z"/>
+                                    </svg>
+                                </div>
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="M12 20q-.825 0-1.412-.587Q10 18.825 10 18q0-.825.588-1.413Q11.175 16 12 16t1.413.587Q14 17.175 14 18q0 .825-.587 1.413Q12.825 20 12 20Zm0-6q-.825 0-1.412-.588Q10 12.825 10 12t.588-1.413Q11.175 10 12 10t1.413.587Q14 11.175 14 12q0 .825-.587 1.412Q12.825 14 12 14Zm0-6q-.825 0-1.412-.588Q10 6.825 10 6t.588-1.412Q11.175 4 12 4t1.413.588Q14 5.175 14 6t-.587 1.412Q12.825 8 12 8Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card">
+                    <div class="card__media"></div>
+                    <div class="card__body">
+                        <div class="card__title">some not big not large title</div>
+                        <div class="card__actions">
+                            <div class="card__subtitle">$19.93</div>
+                            <div class="card__actions--icons">
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="m12 21-1.45-1.3q-3.925-3.5-6.238-6.088Q2 11.025 2 8.15 2 5.8 3.575 4.225 5.15 2.65 7.5 2.65q1.325 0 2.5.562 1.175.563 2 1.538.825-.975 2-1.538 1.175-.562 2.5-.562 2.35 0 3.925 1.575Q22 5.8 22 8.15q0 2.875-2.312 5.462Q17.375 16.2 13.45 19.7Zm0-9.525Zm0 6.825q3.575-3.25 5.788-5.6Q20 10.35 20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2.175.662-1 .663-1.375 1.688h-1.9q-.375-1.025-1.375-1.688-1-.662-2.175-.662-1.5 0-2.5 1t-1 2.5q0 2.2 2.213 4.55Q8.425 15.05 12 18.3Z"/>
+                                    </svg>
+                                </div>
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="M19 22H5q-.825 0-1.413-.587Q3 20.825 3 20V8q0-.825.587-1.412Q4.175 6 5 6h2q0-2.075 1.463-3.538Q9.925 1 12 1t3.538 1.462Q17 3.925 17 6h2q.825 0 1.413.588Q21 7.175 21 8v12q0 .825-.587 1.413Q19.825 22 19 22ZM9 6h6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6Zm10 14V8H5v12Zm-7-6q2.075 0 3.538-1.463Q17 11.075 17 9h-2q0 1.25-.875 2.125T12 12q-1.25 0-2.125-.875T9 9H7q0 2.075 1.463 3.537Q9.925 14 12 14ZM5 8v12V8Z"/>
+                                    </svg>
+                                </div>
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="M12 20q-.825 0-1.412-.587Q10 18.825 10 18q0-.825.588-1.413Q11.175 16 12 16t1.413.587Q14 17.175 14 18q0 .825-.587 1.413Q12.825 20 12 20Zm0-6q-.825 0-1.412-.588Q10 12.825 10 12t.588-1.413Q11.175 10 12 10t1.413.587Q14 11.175 14 12q0 .825-.587 1.412Q12.825 14 12 14Zm0-6q-.825 0-1.412-.588Q10 6.825 10 6t.588-1.412Q11.175 4 12 4t1.413.588Q14 5.175 14 6t-.587 1.412Q12.825 8 12 8Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card">
+                    <div class="card__media"></div>
+                    <div class="card__body">
+                        <div class="card__title">some not big not large title</div>
+                        <div class="card__actions">
+                            <div class="card__subtitle">$19.93</div>
+                            <div class="card__actions--icons">
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="m12 21-1.45-1.3q-3.925-3.5-6.238-6.088Q2 11.025 2 8.15 2 5.8 3.575 4.225 5.15 2.65 7.5 2.65q1.325 0 2.5.562 1.175.563 2 1.538.825-.975 2-1.538 1.175-.562 2.5-.562 2.35 0 3.925 1.575Q22 5.8 22 8.15q0 2.875-2.312 5.462Q17.375 16.2 13.45 19.7Zm0-9.525Zm0 6.825q3.575-3.25 5.788-5.6Q20 10.35 20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2.175.662-1 .663-1.375 1.688h-1.9q-.375-1.025-1.375-1.688-1-.662-2.175-.662-1.5 0-2.5 1t-1 2.5q0 2.2 2.213 4.55Q8.425 15.05 12 18.3Z"/>
+                                    </svg>
+                                </div>
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="M19 22H5q-.825 0-1.413-.587Q3 20.825 3 20V8q0-.825.587-1.412Q4.175 6 5 6h2q0-2.075 1.463-3.538Q9.925 1 12 1t3.538 1.462Q17 3.925 17 6h2q.825 0 1.413.588Q21 7.175 21 8v12q0 .825-.587 1.413Q19.825 22 19 22ZM9 6h6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6Zm10 14V8H5v12Zm-7-6q2.075 0 3.538-1.463Q17 11.075 17 9h-2q0 1.25-.875 2.125T12 12q-1.25 0-2.125-.875T9 9H7q0 2.075 1.463 3.537Q9.925 14 12 14ZM5 8v12V8Z"/>
+                                    </svg>
+                                </div>
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="M12 20q-.825 0-1.412-.587Q10 18.825 10 18q0-.825.588-1.413Q11.175 16 12 16t1.413.587Q14 17.175 14 18q0 .825-.587 1.413Q12.825 20 12 20Zm0-6q-.825 0-1.412-.588Q10 12.825 10 12t.588-1.413Q11.175 10 12 10t1.413.587Q14 11.175 14 12q0 .825-.587 1.412Q12.825 14 12 14Zm0-6q-.825 0-1.412-.588Q10 6.825 10 6t.588-1.412Q11.175 4 12 4t1.413.588Q14 5.175 14 6t-.587 1.412Q12.825 8 12 8Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card">
+                    <div class="card__media"></div>
+                    <div class="card__body">
+                        <div class="card__title">some not big not large title</div>
+                        <div class="card__actions">
+                            <div class="card__subtitle">$19.93</div>
+                            <div class="card__actions--icons">
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="m12 21-1.45-1.3q-3.925-3.5-6.238-6.088Q2 11.025 2 8.15 2 5.8 3.575 4.225 5.15 2.65 7.5 2.65q1.325 0 2.5.562 1.175.563 2 1.538.825-.975 2-1.538 1.175-.562 2.5-.562 2.35 0 3.925 1.575Q22 5.8 22 8.15q0 2.875-2.312 5.462Q17.375 16.2 13.45 19.7Zm0-9.525Zm0 6.825q3.575-3.25 5.788-5.6Q20 10.35 20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2.175.662-1 .663-1.375 1.688h-1.9q-.375-1.025-1.375-1.688-1-.662-2.175-.662-1.5 0-2.5 1t-1 2.5q0 2.2 2.213 4.55Q8.425 15.05 12 18.3Z"/>
+                                    </svg>
+                                </div>
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="M19 22H5q-.825 0-1.413-.587Q3 20.825 3 20V8q0-.825.587-1.412Q4.175 6 5 6h2q0-2.075 1.463-3.538Q9.925 1 12 1t3.538 1.462Q17 3.925 17 6h2q.825 0 1.413.588Q21 7.175 21 8v12q0 .825-.587 1.413Q19.825 22 19 22ZM9 6h6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6Zm10 14V8H5v12Zm-7-6q2.075 0 3.538-1.463Q17 11.075 17 9h-2q0 1.25-.875 2.125T12 12q-1.25 0-2.125-.875T9 9H7q0 2.075 1.463 3.537Q9.925 14 12 14ZM5 8v12V8Z"/>
+                                    </svg>
+                                </div>
+                                <div class="icon">
+                                    <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <path d="M12 20q-.825 0-1.412-.587Q10 18.825 10 18q0-.825.588-1.413Q11.175 16 12 16t1.413.587Q14 17.175 14 18q0 .825-.587 1.413Q12.825 20 12 20Zm0-6q-.825 0-1.412-.588Q10 12.825 10 12t.588-1.413Q11.175 10 12 10t1.413.587Q14 11.175 14 12q0 .825-.587 1.412Q12.825 14 12 14Zm0-6q-.825 0-1.412-.588Q10 6.825 10 6t.588-1.412Q11.175 4 12 4t1.413.588Q14 5.175 14 6t-.587 1.412Q12.825 8 12 8Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <footer class="cards__footer">
+                <button class="button">
+                    see more
+                </button>
+            </footer>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__section--start">
+            <div class="footer__column">
+                <div class="footer__column-title">details</div>
+                <div class="footer__column-item">
+                    <a class="link">        
+                        contact
+                    </a>
+                </div>
+                <div class="footer__column-item">
+                    <a class="link">
+                        delivery
+                    </a>
+                </div>
+                <div class="footer__column-item">
+                    <a class="link">
+                        payment
+                    </a>
+                </div>
+                <div class="footer__column-item">
+                    <a class="link">
+                        refunds
+                    </a>
+                </div>
+                <div class="footer__column-item">
+                    <a class="link">
+                        account
+                    </a>
+                </div>
+                <div class="footer__column-item">
+                    <a class="link">
+                        privacy
+                    </a>
+                </div>
+            </div>
+            <div class="footer__column">
+                <div class="footer__column-title">categories</div>
+                <div class="footer__column-item">
+                    <a href="" class="link">
+                        men
+                    </a>
+                </div>
+                <div class="footer__column-item">
+                    <a href="" class="link">
+                        women
+                    </a>
+                </div>
+                <div class="footer__column-item">
+                    <a href="" class="link">
+                        kids
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__section--end">
+            <div class="footer__column">
+                <div class="footer__column-title">newsletter</div>
+                <div class="footer__column-item">
+                    <p class="footer__column-paragraph">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Sapiente culpa minima, sed incidunt eaque corrupti.
+                    </p>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <input class="form-input" type="text" name="" id="" placeholder="your-email@mail.com">
+                            <div>
+                                <button class="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

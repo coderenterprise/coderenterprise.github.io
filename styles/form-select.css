@@ -1,0 +1,36 @@
+.form-menu {
+    position: relative;
+}
+.form-menu__surface {
+    background-color: #fff;
+    border: 1px solid var(--black-40);
+    position: absolute;
+    top: calc(100% + 8px);
+    display: none;
+    padding: 8px 16px;
+    width:max-content;
+}
+.form-menu__surface--start {
+    left: 0;
+}
+.form-menu__surface--end {
+    right: 0;
+}
+
+.form-menu__label-text {
+    padding-right: 8px;
+}
+
+.form-menu__label {
+    display: flex;
+    align-items: center;
+}
+.form-menu__toggler {
+    display: none;
+}
+.form-menu__toggler:checked + .form-menu__surface{
+    display: block;
+}
+.form-menu__item {
+    display: flex;   
+}

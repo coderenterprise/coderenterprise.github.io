@@ -1,0 +1,103 @@
+/**
+* Lines 
+*/
+.button {
+    border-radius: 0;
+    outline-offset: 0;
+    border-width: 1px;
+    outline-width: 1px;
+}
+
+
+/**
+* Shapes
+*/
+.button::before,
+.button::after {
+    content: "";
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+
+    width: 0;
+}
+
+
+.button::before {
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+.button::after {
+    top:0;
+    height: 0;
+    right: 0;
+}
+.button:hover::before,
+.button:hover::after {
+    width: calc(100% - 4px);
+    height: 100%;
+}
+
+
+/**
+* Forms 
+*/
+.button::before,
+.button::after {
+    z-index: -1;
+}
+
+
+/**
+* Spaces 
+*/
+.button {
+    padding: 8px 32px;
+    position: relative;
+}
+
+
+
+/**
+* Colors 
+*/
+.button {
+    color: var(--black-c0);
+    border-color: var(--black-40);
+    outline-color: var(--black-00);
+    background-color: var(--black-00);
+}
+.button:hover {
+    color: var(--white-ff);
+}
+.button:active {
+    border-color: var(--white-ff);
+    outline-color: var(--black-ff);
+    background-color: var(--black-ff);
+}
+.button::before,
+.button::after {
+    background-color: var(--black-80);
+}
+
+
+/**
+* Textures 
+*/
+.button:hover {
+    cursor: pointer;
+}
+.button {
+    border-style: solid;
+    outline-style: solid;
+}
+
+
+/**
+* Types 
+*/
+.button {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
